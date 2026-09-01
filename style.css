@@ -46,15 +46,18 @@ header {
   top: 0;
   z-index: 1000;
   border-bottom: 4px solid var(--accent);
+  width: 100%;
 }
 
 nav {
-  max-width: 1250px;
+  width:100%;
+  max-width: 100px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing :border-box;
 }
 
 .brand-title {
@@ -68,10 +71,12 @@ nav {
 }
 
 .brand-title img {
-  width: 52px;
-  height: 52px;
+  width: 45px;
+  height: 45px;
+  object-fit:contain;
   border-radius: 50%;
   border: 2px solid var(--accent);
+  flex-shrink:0;
 }
 
 .nav-links {
